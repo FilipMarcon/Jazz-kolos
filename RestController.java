@@ -18,9 +18,5 @@ public class RestController {
         return ResponseEntity.ok(currencyService.getCurrency(currency, last));
     }
 
-    @GetMapping("/test")
-    public ResponseEntity<String> test() {
-        return ResponseEntity.ok(" elo ");
-    }
 }
 

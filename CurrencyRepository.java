@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public interface CurrencyRepository extends JpaRepository<CurrencyResponse, Long> {
 
     @Modifying
-    @Query(value = "INSERT into CurrencyResponse (id, `avg`, currency, fromDate, toDate, createdAt) values (:avg, :currency, :fromDate, :toDate, :createdAt)", nativeQuery = true)
+    @Query(value = "INSERT into CurrencyResponse (id, `avg`, currency, fromDate, toDate,createdAt) values (:avg, :currency, :fromDate, :toDate, :createdAt)", nativeQuery = true)
     CurrencyResponse save(@Param("avg") BigDecimal avg, @Param("currency") String currency, @Param("fromDate") LocalDate from, @Param("toDate") LocalDate to, @Param("createdAt") Instant createdAt);
 }
 
