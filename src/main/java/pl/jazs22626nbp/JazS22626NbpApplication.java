@@ -1,4 +1,4 @@
-package com.jazs22626nbp;
+package pl.jazs22626nbp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
